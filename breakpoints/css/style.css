@@ -1,0 +1,31 @@
+
+body{
+    background-color: gray;
+   
+}
+
+p{
+    color: red;
+}
+
+/* tablet */
+@media all and (min-width:426px){
+    body{
+        background-color: blue;
+    }
+    p{
+        color: white;
+    }
+}
+
+/* Desktop */
+@media all and (min-width:769px){
+    body{
+        background-color: purple;
+    }
+    p{
+        color: black;
+    }
+}
+
+
