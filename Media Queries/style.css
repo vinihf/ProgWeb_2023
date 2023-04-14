@@ -51,7 +51,6 @@ footer{
     
     header{
         grid-area: header;
-        height: 100px;
         background-color: antiquewhite;
     }
     
@@ -67,7 +66,6 @@ footer{
     
     footer{
         grid-area: footer;
-        height: 100px;
         background-color: antiquewhite;
     
     }
