@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#container{
+    display: grid;
+    place-items: center;
+    background-color: antiquewhite;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.formulario{
+    width: 60%;
+    height: 80%;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grupo{
+    display: flex;
+    width: 50%;
+}
+
+label{
+    flex: 1;
+    font-size: 30px;
+
+}
+
+input{
+    flex: 3;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+input[type=submit]{
+    padding: 4px;
+}
+
+.resultado{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    width: 50%;
+    display: none;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="container">
+        <form class="formulario">
+            <div class="grupo">
+                <label id="nome">None:</label>
+                <input type="text" name="nome" id="nome" class="nome" required>
+            </div>
+            <div class="grupo">
+                <label id="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" class="idade" min="0" max="20" required>
+            </div>
+            <div class="grupo">
+                <input type="submit" name="botao" class="botao" value="Enviar">
+            </div>
+            <div class="resultado">
+
+            </div>
+        </form>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
