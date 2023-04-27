@@ -10,7 +10,6 @@ decrementa.addEventListener('click',function(){
 })
 
 reset.addEventListener('click',function(){
-    let valor = parseInt(document.querySelector('h2').innerHTML);
     document.querySelector('h2').innerHTML = 0;
 })
 
@@ -18,3 +17,9 @@ incrementa.addEventListener('click',function(){
   let valor = parseInt(document.querySelector('h2').innerHTML);
   document.querySelector('h2').innerHTML = ++valor;
 })
+
+
+
+
+
+
