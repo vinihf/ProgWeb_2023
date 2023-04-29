@@ -7,7 +7,7 @@ formulario.addEventListener('submit',function(e){
     texto += `${nome}`; 
     tamanho = document.querySelector('input[name="tamanho"]:checked').value;
     texto += `\n${tamanho}`; 
-    if(document.querySelector("#molho").checked == true){
+    if(document.querySelector("#molho").checked){
         texto += "\n Molho"; 
 
     }
