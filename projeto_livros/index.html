@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Livros</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class='container'>
+        <form action="cadastra.php" method="post">
+            <h1>Cadastro de Livros</h1>
+            <div class="grupo-entrada">
+                <div class="grupo">
+                    <label for="titulo">Título:</label>
+                    <input type="text" name="titulo" id="titulo" class="entrada" required>
+                </div>
+                <div class="grupo">
+                    <label for="ano">Ano:</label>
+                    <input type="number" name="ano" id="ano" min="0" max="2023" class="entrada" required>
+                </div>
+                <div class="grupo">
+                    <label for="autor">Autor(a):</label>
+                    <input type="text" name="autor" id="autor" class="entrada" required>
+                </div>
+            </div>
+            <div class="grupo-botao">
+                <input type="submit" name="botao" value="Cadastrar" class="botao">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
