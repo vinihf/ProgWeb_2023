@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['id'])){
+    header("location: formLogin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,15 +21,15 @@
 
     $conexao = new mysqli("localhost","root","","livraria");
     
-    $sql = "SELECT * from livros";
+    $sql = "SELECT * from livros where idUsuario = {$_SESSION['id']}";
 
     if(isset($_GET['genero'])){
         if($_GET['genero']==1){
-            $sql = "SELECT * from livros WHERE genero = 1";
+            $sql = "SELECT * from livros WHERE genero = 1 and idUsuario = {$_SESSION['id']}";
         }else if($_GET['genero']==2){
-            $sql = "SELECT * from livros WHERE genero = 2";
+            $sql = "SELECT * from livros WHERE genero = 2 and idUsuario = {$_SESSION['id']}";
         }else{
-            $sql = "SELECT * from livros";
+            $sql = "SELECT * from livros WHERE idUsuario = {$_SESSION['id']}";
         }
     }
 
@@ -47,7 +53,9 @@
         echo "<hr>";
     }
     ?>    
-    <a href='formAdiciona.html'>Adiciona livro</a>
+    <a href='formAdiciona.php'>Adiciona livro</a>
+    <a href='formAdicionaUsuario.html'>Adiciona Usuario</a>
+    <a href='logout.php'>Logout</a>
 </body>
 </html>
 
