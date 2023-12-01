@@ -1,0 +1,12 @@
+{
+    "name": "usuario/memes",
+    "authors": [
+        {
+            "name": "VHF"
+        }
+    ],
+    "require": {
+        "leafs/leaf": "^3.5",
+        "leafs/db": "^2.1"
+    }
+}
